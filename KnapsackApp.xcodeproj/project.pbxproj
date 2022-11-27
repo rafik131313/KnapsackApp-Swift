@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CE34A747292FD0C90088F0F5 /* KnapsackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A746292FD0C90088F0F5 /* KnapsackAppApp.swift */; };
-		CE34A749292FD0C90088F0F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A748292FD0C90088F0F5 /* ContentView.swift */; };
+		CE34A749292FD0C90088F0F5 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A748292FD0C90088F0F5 /* ResultsView.swift */; };
 		CE34A74B292FD0CA0088F0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE34A74A292FD0CA0088F0F5 /* Assets.xcassets */; };
 		CE34A74E292FD0CA0088F0F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE34A74D292FD0CA0088F0F5 /* Preview Assets.xcassets */; };
+		CE34A758292FD16E0088F0F5 /* AppVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A757292FD16E0088F0F5 /* AppVM.swift */; };
+		CE34A75A292FD9130088F0F5 /* ChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A759292FD9130088F0F5 /* ChartDataModel.swift */; };
+		CE34A75E292FFE8E0088F0F5 /* ChartSeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A75D292FFE8E0088F0F5 /* ChartSeriesModel.swift */; };
+		CE34A7602930082B0088F0F5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A75F2930082B0088F0F5 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE34A743292FD0C90088F0F5 /* KnapsackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnapsackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34A746292FD0C90088F0F5 /* KnapsackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackAppApp.swift; sourceTree = "<group>"; };
-		CE34A748292FD0C90088F0F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE34A748292FD0C90088F0F5 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		CE34A74A292FD0CA0088F0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE34A74D292FD0CA0088F0F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE34A757292FD16E0088F0F5 /* AppVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVM.swift; sourceTree = "<group>"; };
+		CE34A759292FD9130088F0F5 /* ChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataModel.swift; sourceTree = "<group>"; };
+		CE34A75D292FFE8E0088F0F5 /* ChartSeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSeriesModel.swift; sourceTree = "<group>"; };
+		CE34A75F2930082B0088F0F5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		CE34A745292FD0C90088F0F5 /* KnapsackApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE34A756292FD1590088F0F5 /* Viewmodel */,
+				CE34A755292FD14D0088F0F5 /* View */,
+				CE34A754292FD13D0088F0F5 /* Model */,
 				CE34A746292FD0C90088F0F5 /* KnapsackAppApp.swift */,
-				CE34A748292FD0C90088F0F5 /* ContentView.swift */,
 				CE34A74A292FD0CA0088F0F5 /* Assets.xcassets */,
 				CE34A74C292FD0CA0088F0F5 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				CE34A74D292FD0CA0088F0F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE34A754292FD13D0088F0F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE34A759292FD9130088F0F5 /* ChartDataModel.swift */,
+				CE34A75D292FFE8E0088F0F5 /* ChartSeriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE34A755292FD14D0088F0F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE34A748292FD0C90088F0F5 /* ResultsView.swift */,
+				CE34A75F2930082B0088F0F5 /* MenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE34A756292FD1590088F0F5 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				CE34A757292FD16E0088F0F5 /* AppVM.swift */,
+			);
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE34A749292FD0C90088F0F5 /* ContentView.swift in Sources */,
+				CE34A75E292FFE8E0088F0F5 /* ChartSeriesModel.swift in Sources */,
+				CE34A7602930082B0088F0F5 /* MenuView.swift in Sources */,
+				CE34A75A292FD9130088F0F5 /* ChartDataModel.swift in Sources */,
+				CE34A749292FD0C90088F0F5 /* ResultsView.swift in Sources */,
+				CE34A758292FD16E0088F0F5 /* AppVM.swift in Sources */,
 				CE34A747292FD0C90088F0F5 /* KnapsackAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

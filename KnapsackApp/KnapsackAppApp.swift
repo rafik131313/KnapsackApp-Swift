@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct KnapsackAppApp: App {
+    
+    @StateObject var appVM = AppVM()
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
+                .environmentObject(appVM)
         }
     }
 }
